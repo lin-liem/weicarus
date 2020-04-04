@@ -1,0 +1,125 @@
+.hwslider {
+	width: 100%;
+	/*height: auto ;*/
+	height: 12.5rem;
+	min-width: 280px;
+	min-height: 160px;
+	position: relative;
+	overflow: hidden
+}
+
+.hwslider ul {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1
+}
+
+.hwslider ul li {
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+.hwslider ul li.active {
+	display: block
+}
+
+.hwslider ul li img {
+	width: 100%;
+	max-width: 100%;
+	min-height: 200px;
+	display: block
+}
+
+.dots {
+	position: absolute;
+	bottom: 4%;
+	left: 5%;
+	min-width: 60px;
+	height: 7px;
+	z-index: 2
+}
+
+.dots span {
+	float: left;
+	width: 7px;
+	height: 7px;
+	margin-right: 8px;
+	cursor: pointer;
+	background-color: rgba(255,255,255,0.7);
+	border: 0;
+	border-radius: 3px;
+	-webkit-transition: width .4s ease-in;
+	transition: width .4s ease-in;
+}
+
+.dots span.active {
+	margin-right: 8px;
+    width: 30px;
+    height: 7px;
+}
+
+.arr {
+	/* display: none; */
+	position: absolute;
+	top: 0px;
+	bottom: 0px;
+	z-index: 2;
+	width: 40px;
+	height: 100%;
+	text-align: center;
+	font-size: 36px;
+	color: #fff;
+	text-decoration: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;    
+	opacity: 0;
+	/* 属性 花费时间 曲线  何时开始*/
+	transition: all 0.5s ease-in 0s;
+}
+
+.hwslider:hover .arr {
+	text-decoration: none;
+	color: #fff;
+	display: flex;
+	align-items: center;   
+	justify-content: center;
+	opacity: 0.7;
+}
+.arr svg{
+		fill: #fff;
+		width: 14px;
+		height: 20px;
+}
+.prev {
+	left: 0;
+	background-image: linear-gradient(to right, rgb(0, 0, 0), transparent);
+}
+
+.next {
+	right: 0;
+	background-image: linear-gradient(to left, rgb(0, 0, 0), transparent);
+}
+.intro {
+	position: absolute;
+	left: 4.8%;
+	bottom: 9%;
+	width:  85%;
+	min-width: 240px;
+	z-index: 2;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight:600;
+	line-height: 1.6rem;
+	overflow:hidden; 
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 1;
+}

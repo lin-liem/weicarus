@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>hwSlider支持手机app触屏滑动</title>
+		<link type="text/css" rel="stylesheet" href="css/hwslider.css" />
+		<style>
+			body{background-color: #212121}
+			ul{
+				padding: 0;
+				margin: 0;
+			}
+			
+        </style>
+	</head>
+	<body>
+		<div style="width:800px;margin:auto">
+				<div id="hwslider" class="hwslider">
+					<ul>
+						<li>
+							<a href="#"><img src="img/s1.jpg" alt=""></a>
+							<div class="intro">
+								这是一个内容滑动切换是一个内容滑动切换是一个内容滑动切换效果，支持触控滑动，响应式滑块。
+							</div>
+						</li>
+						<li>
+							<a href="#"><img src="img/s2.jpg" alt=""></a>
+							<div class="intro">
+								这是一个内容滑动切换效果，支持触控滑动，响应式滑块。
+							</div>
+						</li>
+					</ul>
+				</div>
+		</div>
+	</body>
+</html>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.hwSlider.min.js"></script>
+<script>
+	$(function() {
+		$("#hwslider").hwSlider({
+			autoPlay: true,
+			arrShow: true,
+			dotShow: true,
+			touch: true
+		});
+	});
+</script>

@@ -1,0 +1,68 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>hwSlider支持手机app触屏滑动</title>
+<meta name="keywords" content="hwSlider滑动图片插件,jQuery触屏滑动轮播图片,hwSlider滑动焦点图演示" />
+<meta name="description" content="hwSlider是一款支持移动设备轮播图片插件，支持的图片效果有焦点图轮播、图片和文字混搭。" />
+<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/bootstrap-3.3.4.css">
+<link type="text/css" rel="stylesheet" href="css/hwslider.css" />
+<style>
+			body{background-color: #212121}
+            #hwslider ul li:last-child{background: #f90; text-align: center;}
+            #hwslider ul li:last-child h4{height:42px; margin: 20% auto;font-size: 48px; color:#fff;}	
+            .intro{position:absolute; left:20%; top:20%; width:42%; min-width: 240px; background: rgba(0,0,0,.3); padding: 6px;z-index: 2; color: #fff;line-height: 26px}
+            #otherhwSlider ul li:first-child{background:#f90;text-align: center;}
+            #otherhwSlider h4{height:42px; margin: 16% auto;font-size: 1.5rem; color:#fff;}
+            #otherhwSlider p{line-height:24px;}
+            #otherhwSlider pre{padding-top:10%;padding-left:15%;display:block;height:100%;background:#f00; color: #fff}
+            #otherhwSlider ul li:last-child{background:#360;color:#fff; text-align: center;}
+        </style>
+</head>
+<body>
+<div style="width:800px;margin:auto">
+<div class="col-md-12">
+<div id="hwslider" class="hwslider">
+<ul>
+<li><div class="intro"><strong></strong><p>这是一个内容滑动切换效果，支持触控滑动，响应式滑块。</p></div><a href="#"><img src="images/s1.jpg" alt=""></a></li>
+<li><a href="#"><img src="images/s2.jpg" alt=""></a></li>
+<li><h4>hwSlider.js</h4></li>
+</ul>
+</div>
+</div>
+<div class="col-md-6 col-md-offset-3">
+<div id="otherhwSlider" class="hwslider">
+<ul>
+<li><h4>hwSlider.js</h4></li>
+<li>
+<pre>$("#otherhwSlider").hwSlider({
+	width: 500,
+	height: 200
+});</pre>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="js/jquery.hwSlider.min.js"></script>
+<script>
+    $(function() {
+        $("#hwslider").hwSlider({
+            autoPlay: true,
+            arrShow: true,
+            dotShow: true,
+            touch: true
+        });
+        $("#otherhwSlider").hwSlider({
+            width: 500,
+            height: 200,
+            afterSlider: function() {
+                console.log('滑动');
+            }
+        });
+    });
+</script>
