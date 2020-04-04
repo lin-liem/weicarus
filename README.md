@@ -1,8 +1,9 @@
-<h1>Modify before：<a href="https://github.com/halo-dev/halo-theme-icarus" target="_blank">halo-theme-icarus</a></h1>
-<h1>Modify after：<a href="https://www.mumusur.com/" target="_blank">预览效果地址</a></h1>
+<h3>Modify before：<a href="https://github.com/halo-dev/halo-theme-icarus" target="_blank">halo-theme-icarus</a></h3>
+<h3>Modify after：<a href="https://www.mumusur.com/" target="_blank">预览效果地址(支持halo 1.3.1)</a></h3>
 
 ## 鸣谢
 本人只是对原主题做了修改，感谢[halo](https://halo.run)的优质个人博客，感谢[ppoffice](https://github.com/ppoffice)做了这么优秀的主题。
+
 修改后主题：[https://github.com/lin-liem/weicarus](https://github.com/lin-liem/weicarus)
 
 所以，保留本主题原有README，如下：
