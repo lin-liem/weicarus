@@ -1,11 +1,11 @@
-id: ppoffice_icarus
-name: Icarus
+id: weicarus
+name: weicarus
 author:
-  name: ppoffice
-  website: https://github.com/ppoffice
+  name: liem
+  website: https://github.com/lin-liem
 description:
 logo:
-website: https://github.com/ppoffice/hexo-theme-icarus
+website: https://github.com/lin-liem/weicarus
 repo: https://github.com/halo-dev/halo-theme-icarus
 version: 2.6.2
 require: 1.3.0
