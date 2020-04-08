@@ -1,6 +1,6 @@
 <#macro article post,layout,commentType,index>
 	<#include "../comment/comment.ftl">
-		<div class="card">
+		<div class="card article-list" >
 			<div class="card-content article">
 				<#if index>
 					<h1 class="title is-size-4 is-size-4-mobile has-text-weight-bold is-marginless">

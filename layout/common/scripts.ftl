@@ -1,5 +1,4 @@
 <script src="//cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
-<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
 
 <#include "../plugin/gallery.ftl">
 <#include "../plugin/outdated-browser.ftl">

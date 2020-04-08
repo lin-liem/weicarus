@@ -1305,9 +1305,14 @@ figure.highlight .title {
 }
 
 .menu {
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
+	/*	超出隐藏
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	*/
+	/* 超出换行 */
+	word-break:break-all;
+	word-wrap:break-word;
 }
 
 .menu-fixed {

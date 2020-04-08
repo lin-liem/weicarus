@@ -27,26 +27,16 @@
     <link rel="alternative" href="${atom_url!}" title="${blog_title!}" type="application/atom+xml">
 
     <@global.head />
-
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.4.1/css/all.min.css">
     <link rel="stylesheet" href="//fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
-
-    <style>
+  <style>
         body>.footer,
         body>.navbar,
         body>.section {
             opacity: 0
         }
-        html { 
-            -webkit-filter: grayscale(100%); 
-            -moz-filter: grayscale(100%); 
-            -ms-filter: grayscale(100%); 
-            -o-filter: grayscale(100%); 
-            filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);  
-            _filter:none; 
-        } 
     </style>
 
     <#if is_post?? || is_sheet??>
@@ -62,7 +52,6 @@
             }
         </style>
     </#if>
-  
     <#if is_post?? || is_sheet??>
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/lightgallery@1.6.8/dist/css/lightgallery.min.css">
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
@@ -92,20 +81,24 @@
                 <#else>
 					<div class="column is-8-tablet is-8-desktop is-10-widescreen has-order-2 column-main">
                 </#if>
-                <#nested />
+                	<#nested />
                 </div>
-                      
                 <#if type == "index">
-                  	<@widget 'right','menuHidden' />
-                  	<@widget 'left','menuHidden' />
+                  	<@widget 'right','menuHide' />
+                  	<@widget 'left','menuHide' />
 				<#elseif type == "urlNav">
                   	<@widget 'left','urlNavMenuShow'/>
                 <#elseif type == "journals">
                   	<@widget 'right','no' />
+                <#elseif type == "categories">
+                  	<@widget 'left','menuHide'/>
+                <#elseif type == "archives">
+                  	<@widget 'left','menuHide'/>
+                <#elseif type == "category">
+                  	<@widget 'left','menuHide'/>
                 <#else>
 					<@widget 'left','menuShow'/>
                 </#if>
-                
             </div>
         </div>
     </section>

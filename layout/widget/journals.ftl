@@ -64,3 +64,4 @@
 <#else>
      还没有发布过日志，回<a class="font-weight-bold" href="${context!}">主页</a>看看吧
 </#if>
+ 

@@ -240,10 +240,6 @@ $(function() {
 });
 
 
-
-
-
-
 /***
 * 首页轮播图slider
 **/
@@ -255,4 +251,3 @@ $(function() {
     touch: true
   });
 });
-
