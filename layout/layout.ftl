@@ -21,24 +21,20 @@
     <meta name="twitter:title" content="${title!}">
     <meta name="twitter:description" content="${meta_description!}">
     <meta name="twitter:image" content="${user.avatar!}">
-
+	<@global.head />
     <link rel="canonical" href="${canonical!}" />
-
     <link rel="alternative" href="${atom_url!}" title="${blog_title!}" type="application/atom+xml">
-
-    <@global.head />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/bulma@0.7.5/css/bulma.min.css">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.4.1/css/all.min.css">
     <link rel="stylesheet" href="//fonts.loli.net/css?family=Ubuntu:400,600|Source+Code+Pro">
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css">
-  <style>
-        body>.footer,
-        body>.navbar,
-        body>.section {
-            opacity: 0
-        }
+    <style>
+          body>.footer,
+          body>.navbar,
+          body>.section {
+              opacity: 0
+          }
     </style>
-
     <#if is_post?? || is_sheet??>
         <style>
             .content code .number{
@@ -57,17 +53,15 @@
         <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/css/justifiedGallery.min.css">
     </#if>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/outdatedbrowser@1.1.5/outdatedbrowser/outdatedbrowser.min.css">
-
     <script src="//cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
-
     <link rel="stylesheet" href="${theme_base!}/source/css/style.css">
     <link rel="stylesheet" href="${theme_base!}/source/css/bundle.css">
 	<link rel="stylesheet" href="${theme_base!}/source/lib/hwslider/css/hwslider.css">
-  
     <#if post??>
         <link rel="stylesheet" type="text/css" href="${theme_base!}/source/lib/prism/css/prism-${settings.code_pretty!'Default'}.css" />
         <script type="text/javascript" src="${theme_base!}/source/lib/prism/js/prism.js"></script>
     </#if>
+  	<#include "common/head.ftl">
 </head>
 <body class="is-3-column">
 	<@navbar 'page' />

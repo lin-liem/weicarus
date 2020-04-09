@@ -24,3 +24,15 @@
         $(".navbar-start a").eq(0).addClass('is-active');
     }
 </script>
+  
+<#if is_journals?? >
+<script src="//cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/halo-dev/halo-comment@latest/dist/halo-comment.min.js"></script>
+<script>
+     var configs = {
+       autoLoad: true,
+       showUserAgent: true
+     }
+</script>
+</#if>
+       

@@ -215,3 +215,18 @@ custom_links:
                         <i class="fab fa-creative-commons-by"></i>
                     </a>
                 </p>'
+view_set:
+  label: 界面配置
+  items:
+    slider_main_tag:
+       name: slider_main_tag
+       label: 【轮播列表】标签别名
+       type: text
+       placeholder: '默认为lunboliebiao'
+       description: '自定义轮播图显示内容，对应文章标签别名,建议是英文字母'
+    slider_right_tag:
+       name: slider_right_tag
+       label: 【轮播附图】标签别名
+       type: text
+       placeholder: '默认为lunbofutu'
+       description: '自定义右侧图显示内容，对应文章标签别名,建议是英文字母'

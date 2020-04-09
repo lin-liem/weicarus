@@ -34,7 +34,7 @@
               	<a class="navbar-item" href="javascript:;" onclick="filtration_click()"> 
               		<i class="fas fa-user"></i>&nbsp;&nbsp;个人信息
         		</a>
-            </div>
+          	</div>
 		</div>
 	</div>
 </nav>

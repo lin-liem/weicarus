@@ -42,6 +42,12 @@ textarea {
     height: 55px;
     width: 55px;
 }
+.pointer{
+	cursor: pointer;
+}
+.pointer:hover .subtitle{
+	color:#bd0d0d;
+}
 @media screen and (min-width:1280px) {
 
 	.is-1-column .container,
@@ -91,7 +97,7 @@ textarea {
 }
 
 .card {
-	border-radius: 4px;
+	/*border-radius: 4px;*/
 	box-shadow: 0 4px 10px rgba(0, 0, 0, .05), 0 0 1px rgba(0, 0, 0, .1)
 }
 
@@ -711,7 +717,7 @@ textarea {
 }
 
 .card {
-	border-radius: 4px;
+	/*border-radius: 4px;*/
 	box-shadow: 0 4px 10px rgba(0, 0, 0, .05), 0 0 1px rgba(0, 0, 0, .1)
 }
 
@@ -1438,7 +1444,18 @@ figure.highlight .title {
 	height:7.523rem;
 }
 .banner-height-2 img{
+	overflow: hidden;
 	border-radius: 4px;
 	width:100%;
 	height:6.782rem;
+	cursor: pointer;  
+    transition: all 0.6s;  
+} 
+.banner-height-2 img:hover{  
+	transform: scale(0.95);  
+}  
+
+/** 默认隐藏评论 */
+.journals-comment{
+	display:none;
 }

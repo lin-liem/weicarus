@@ -18,23 +18,29 @@
                 <nav class="level is-mobile">
                   <!-- Left side -->
                   <div class="level-left">
-                    <div class="level-item">
+                    <div class="level-item pointer">
                       <p class="subtitle is-6 has-text-grey">
-                        <i class="fas fa-heart"></i>&nbsp;&nbsp;点赞
+                        <i class="fas fa-heart"></i>&nbsp;&nbsp;<span>点赞</span>
                       </p>
                     </div>&nbsp;&nbsp;
-                    <div class="level-item">
+                    <div class="level-item comment-btn pointer">
                       <p class="subtitle is-6 has-text-grey">
-                        <i class="fas fa-comment"></i>&nbsp;&nbsp;评论
+                        <i class="fas fa-comment"></i>&nbsp;&nbsp;<span>评论</span>
                       </p>
                     </div>&nbsp;&nbsp;
-                    <div class="level-item">
+                    <div class="level-item pointer">
                       <p class="subtitle is-6 has-text-grey">
-                       <i class="fas fa-share"></i>&nbsp;&nbsp;转发
+                       <i class="fas fa-share"></i>&nbsp;&nbsp;<span>转发</span>
                       </p>
                     </div>
                   </div>
            		</nav>
+                <div class="journals-comment">
+                  <h3 class="title is-5 has-text-weight-normal">评论</h3>
+                  <#if !journal.disallowComment!false>
+                      <halo-comment id="${journal.id}" type="journal"/>
+                  </#if>
+                </div>
             </div>
         </div>
 	</#list>

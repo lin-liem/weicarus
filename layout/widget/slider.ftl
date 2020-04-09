@@ -1,5 +1,5 @@
 <#import "./slider_list.ftl" as slider_list>
- <#import "./slider_tag.ftl" as slider_tag>
+<#import "./slider_tag.ftl" as slider_tag>
 
 <div class="card " style="transition: opacity 0.3s ease-out 0s, transform 0.3s ease-out 0s; opacity: 1; transform-origin: center top;">
 	<div class="article">
@@ -12,7 +12,6 @@
 				</div>
 			</div>
           	<@slider_tag.sliderTagMacro/>
-			
 		</div>
 	</div>
 </div>

@@ -251,3 +251,15 @@ $(function() {
     touch: true
   });
 });
+
+/***
+* 点击显示评论
+**/
+$(".comment-btn").click(function(){
+	var that = $(this);
+	var ele = that.parents(".card-content").children('.journals-comment');
+	ele.is(':hidden') ? that.find('span').text('收起评论') : that.find('span').text('评论');
+	ele.slideToggle();
+	
+	
+});
