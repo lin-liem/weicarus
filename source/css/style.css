@@ -1459,3 +1459,42 @@ figure.highlight .title {
 .journals-comment{
 	display:none;
 }
+
+/** 公告&广告样式*/
+.banner-advert{
+  position: relative; 
+  margin-bottom:0.5rem; 
+  height:500px;
+  display:none;
+}
+.banner-advert>a>img{
+	width:100%;
+}
+.close-btn{
+  position: absolute;
+  right: 0.4rem;
+  top: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all .5s linear .3s;
+  -o-transition: all .5s linear .3s; /*兼容parsto内核*/
+  -moz-transition: all .5s linear .3s; /*兼容gecko内核*/
+  -webkit-transition: all .5s linear .3s; /*兼容webkit内核*/
+}
+.close-btn:hover{
+  color: #b1131b;
+  transform: rotate(360deg);
+}
+.notice{
+  margin-top: 0rem !important;
+  margin-bottom:1.5rem;
+}
+.notice-content{
+  background-color: transparent;
+  padding: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+.notice-content>i{
+  color: #b1131b;
+}

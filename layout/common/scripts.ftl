@@ -26,13 +26,39 @@
 </script>
   
 <#if is_journals?? >
-<script src="//cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/halo-dev/halo-comment@latest/dist/halo-comment.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.min.js"></script>
+  <script src="//cdn.jsdelivr.net/gh/halo-dev/halo-comment@latest/dist/halo-comment.min.js"></script>
+  <script>
+       var configs = {
+         autoLoad: true,
+         showUserAgent: true
+       }
+  </script>
+</#if>
+
+<#if is_archives?? || is_category?? || is_index??>
 <script>
-     var configs = {
-       autoLoad: true,
-       showUserAgent: true
-     }
+    // 判断为手机则不要目录
+    if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+      console.log('info','完善中...');
+    } else{
+      // 固定分类 
+      $(function() {
+        var offSetTop = $("#cate-fixed").offset().top;
+        $(window).scroll(function() {
+          //获取垂直滚动的距离
+          var scrollTop = $(document).scrollTop();
+          if (scrollTop >= offSetTop) {
+            var wdh = $("#cate-fixed").width();
+            $("#cate-fixed").css("width", wdh);
+            $("#cate-fixed").addClass("menu-fixed");
+            $("#cate-fixed").css("margin-top", "1.5rem");
+          } else {
+            $("#cate-fixed").removeClass("menu-fixed");
+            $("#cate-fixed").css("margin-top", "0rem");
+          }
+        });
+      });
+    }  
 </script>
 </#if>
-       

@@ -14,23 +14,23 @@
                         <p class="subtitle is-6"><@global.timeline datetime=journal.createTime/></p>
                     </div>
                 </div>
-                <div class="content">${journal.content}</div>
+              <div class="content">${journal.content}</div>
                 <nav class="level is-mobile">
                   <!-- Left side -->
                   <div class="level-left">
                     <div class="level-item pointer">
                       <p class="subtitle is-6 has-text-grey">
-                        <i class="fas fa-heart"></i>&nbsp;&nbsp;<span>点赞</span>
+                        <i class="fas fa-heart"></i>&nbsp;&nbsp;${journal.likes}&nbsp;<span>点赞</span>
                       </p>
                     </div>&nbsp;&nbsp;
                     <div class="level-item comment-btn pointer">
                       <p class="subtitle is-6 has-text-grey">
-                        <i class="fas fa-comment"></i>&nbsp;&nbsp;<span>评论</span>
+                        <i class="fas fa-comment"></i>&nbsp;&nbsp;${journal.commentCount}&nbsp;<span>评论</span>
                       </p>
                     </div>&nbsp;&nbsp;
                     <div class="level-item pointer">
                       <p class="subtitle is-6 has-text-grey">
-                       <i class="fas fa-share"></i>&nbsp;&nbsp;<span>转发</span>
+                       <i class="fas fa-share"></i>&nbsp;&nbsp;0&nbsp;<span>转发</span>
                       </p>
                     </div>
                   </div>

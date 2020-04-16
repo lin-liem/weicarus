@@ -67,6 +67,12 @@
 	<@navbar 'page' />
     <section class="section">
         <div class="container">
+          	<#if settings.advert_enable!false>
+          		<#include "common/advert.ftl">
+            </#if>
+            <#if settings.notice_enable!false>
+          		<#include "common/notice.ftl">
+            </#if>
             <div class="columns">
               	<#if type == "index">
                   	<div class="column is-8-tablet is-8-desktop is-7-widescreen has-order-2 column-main">

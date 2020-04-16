@@ -263,3 +263,21 @@ $(".comment-btn").click(function(){
 	
 	
 });
+
+/***
+* 关闭广告
+**/
+$(".close-btn").click(function(){
+	var that = $(this);
+	var ele = that.parents(".banner-advert");
+	ele.slideUp();
+});
+/***
+* 延时开启广告
+**/
+function lazyAdvert(){
+  setTimeout(function(){
+	$(".banner-advert").slideDown('slow');
+  },1000);
+}
+lazyAdvert();
