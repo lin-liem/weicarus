@@ -4,6 +4,11 @@
 ![screenshot.png](https://github.com/lin-liem/weicarus/blob/master/screenshot.png)
 
 ## 更新
+2020年4月16日 更新内容：
+1：公告展示
+2：大屏banner广告展示
+可自定义关启，如需请更新后，前往后台管理【外观】->【主题】->【设置】->【界面配置】进行设置。
+
 2020年4月8日 更新内容：
 
 一、修复【资源目录】超过宽度隐藏的问题，改为了换行
