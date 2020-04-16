@@ -230,3 +230,51 @@ view_set:
        type: text
        placeholder: '默认为lunbofutu'
        description: '自定义右侧图显示内容，对应文章标签别名,建议是英文字母'
+    advert_enable:
+       name: advert_enable
+       label: Banner广告开关
+       type: radio
+       data-type: bool
+       default: false
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    advert_title:
+       name: advert_title
+       label: Banner广告标题
+       type: text
+       placeholder: '广告标题'
+    advert_pc_img:
+       name: advert_pc_img
+       label: BannerPC端广告图
+       type: attachment
+       placeholder: '广告图'
+    advert_mobile_img:
+       name: advert_mobile_img
+       label: Banner移动端广告图
+       type: attachment
+       placeholder: '广告图'
+    advert_href:
+       name: advert_href
+       label: Banner广告链接
+       type: text
+       placeholder: '广告链接'
+       default: '#none'
+    notice_enable:
+       name: notice_enable
+       label: 公告开关
+       type: radio
+       data-type: bool
+       default: false
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
+    notice_info:
+       name: notice_info
+       label: 公告信息
+       type: textarea
+       placeholder: '请输入公告'
