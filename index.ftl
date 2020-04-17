@@ -1,9 +1,11 @@
 <#include "layout/layout.ftl">
 <#include "layout/common/article.ftl">
 <@layout type="index" title="${options.blog_title!}" keywords="${options.seo_keywords!}" description="${options.seo_description!}" canonical="${context!}">
-  	<#-- 0表示第一页才会显示-->  
-  	<#if posts.number == 0>
-      <#include "layout/widget/slider.ftl">
+    <#if settings.slider_enable!true>
+      	<#-- 0表示第一页才会显示--> 
+        <#if posts.number == 0>
+      		<#include "layout/widget/slider.ftl">
+    	</#if>
     </#if>
   	<#list posts.content as post>
 		<@article post,'index','null',true />

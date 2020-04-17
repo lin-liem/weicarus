@@ -218,6 +218,17 @@ custom_links:
 view_set:
   label: 界面配置
   items:
+    slider_enable:
+       name: notice_enable
+       label: 轮播开关
+       type: radio
+       data-type: bool
+       default: true
+       options:
+         - value: true
+           label: 开启
+         - value: false
+           label: 关闭
     slider_main_tag:
        name: slider_main_tag
        label: 【轮播列表】标签别名

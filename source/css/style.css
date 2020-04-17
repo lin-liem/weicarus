@@ -1,3 +1,5 @@
+
+
 html {
 	font-size: 14px
 }
@@ -47,6 +49,10 @@ textarea {
 }
 .pointer:hover .subtitle{
 	color:#bd0d0d;
+}
+.border-bottom{
+	padding: 0.5rem 0rem; 
+	border-bottom: 3px solid brown;
 }
 @media screen and (min-width:1280px) {
 
@@ -481,7 +487,7 @@ img.thumbnail {
 .content h4,
 .content h5,
 .content h6 {
-	font-weight: 400
+	font-weight: 560
 }
 
 .content h1 {
@@ -1100,7 +1106,7 @@ img.thumbnail {
 .content h4,
 .content h5,
 .content h6 {
-	font-weight: 400
+	font-weight: 560
 }
 
 .content h1 {
